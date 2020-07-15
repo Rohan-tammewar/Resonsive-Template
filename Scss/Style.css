@@ -1,0 +1,427 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -0.7em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background: #f8f8f8;
+}
+
+.wrapper {
+  max-width: 800px;
+  width: 97%;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #040120;
+}
+
+h2 {
+  color: #1792d2;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.nav li {
+  margin-left: 2em;
+}
+
+.nav li a:hover,
+.nav li a:focus {
+  color: #1792d2;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.left-content p {
+  font-size: 0.75rem;
+  margin: 1em auto;
+  color: #707070;
+}
+
+.content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.content1 div:nth-child(1) {
+  width: 30%;
+}
+
+.content1 div:nth-child(2) {
+  margin-left: 1em;
+  width: 70%;
+}
+
+.content1 div h3 {
+  font-size: 1.5rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #040120;
+}
+
+.content1 div:nth-child(2) p:nth-child(3) {
+  color: #1792d2;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.left-content {
+  margin-right: 1em;
+  width: 80%;
+}
+
+.left-content h1 {
+  margin-bottom: 0.75em;
+}
+
+.right-content {
+  width: 20%;
+}
+
+.up-content {
+  border: 5px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 2em;
+  padding: 0 1.25em;
+}
+
+.up-content p {
+  color: #707070;
+  font-size: 0.6rem;
+  padding-bottom: 2rem;
+}
+
+.up-content img {
+  margin: 1.35em 0;
+}
+
+.up-content h4 {
+  padding-top: 2em;
+}
+
+.down-content {
+  padding: 0 1.25em;
+  border: 5px solid rgba(0, 0, 0, 0.25);
+}
+
+.down-content img {
+  margin-bottom: 0.5em;
+}
+
+.down-content p {
+  font-size: 0.6rem;
+  margin-bottom: 2em;
+  color: #707070;
+}
+
+.down-content h4 {
+  margin-top: 2em;
+}
+
+footer div {
+  width: 100%;
+  height: 40px;
+  font-size: 0.75rem;
+  background: #040120;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2em 0;
+    text-align: center;
+  }
+  .nav li {
+    margin: 0;
+    margin-top: 1em;
+  }
+  .navh {
+    text-align: center;
+  }
+  .content {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .left-content {
+    width: 100%;
+  }
+  .left-content div:nth-child(1) {
+    width: 100%;
+  }
+  .right-content {
+    width: 100%;
+  }
+  .content1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content1 div:nth-child(2) {
+    margin: 0;
+    width: 100%;
+  }
+  .up-content,
+  .down-content {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .down-content h4 {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
